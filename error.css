@@ -1,0 +1,35 @@
+* 
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: normal;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    margin-top: 11em;
+    margin-left: 45%;
+}
+h3 {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: normal;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    margin-top: 11em;
+    margin-left: 45%;
+}
+
+
+body {
+    background: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+

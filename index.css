@@ -1,0 +1,217 @@
+
+@charset "UTF-8";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+
+/* RESETEO CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+/* INICIA CSS */
+
+html{
+  background-color: rgb(245, 239, 238);
+  margin: 20px;
+}
+
+html, body {
+  box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  overflow-x: hidden;  
+  }
+
+
+#container{
+  width:100%;
+  height:100%;
+  }
+
+  section{
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      margin: 0 ;
+      overflow: hidden;
+      position: relative;
+  }
+
+/* BARRA DE MENÚ */
+
+nav{
+  background-color: rgb(122, 0, 0);
+  margin: 0 auto;
+  position: fixed;
+  z-index: 1;
+  }
+     
+  ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  }
+     
+  li {
+  display: flex;
+  justify-content: space-between;
+  }
+     
+  li a {
+  display: flex;
+  justify-content: space-around;
+  color: rgb(255, 170, 170);
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration:none;
+  }
+     
+  li a:hover {
+  background-color:rgba(194, 192, 192, 0.363);
+  width: 100%;
+  }
+
+#logo1{
+  float: right;
+  margin-right: 20px;
+  margin-top: 2px;
+  width: 20%;
+}
+
+#imagenprincipal{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: -1000;      
+}
+
+#frasemedia{
+  font-family: 'Poppins', sans-serif;
+  color: #b98802;
+  font-size: 30px;
+  line-height: normal;
+  margin-left: 230px;
+  margin-top:580px;
+  margin-bottom: 50px;
+  z-index: -1000; 
+  
+}
+
+/* JAVASCRIPT */
+* {
+  margin: 0;
+}
+
+.container {
+  background: rgb(122, 20, 34);
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 2em;
+  font-size: 60px;
+  line-height: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.changeable{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+  font-weight: bold;
+  font-size: 150px;
+  margin-left: 10px;
+  color: pink;
+}
+
+.changeable{
+	animation: alternatingText 9s linear infinite 0s;
+}
+
+.changeable:nth-child(2) { 
+	animation-delay: 5s; 
+}
+
+@keyframes alternatingText {
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    10% { opacity: 1; }
+    50% { opacity: 1; }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+
+/* Footer */
+
+footer{
+  font-family: 'Poppins', sans-serif;
+  background-color:rgb(104, 15, 19);
+  color:rgb(246, 208, 197);
+  height: 40px;
+  box-align: center;
+}
+
+p{
+  margin: 15px;
+  font-size: 16px;
+}
